@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chama Burger Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -15,7 +17,7 @@
             <!--Barra de nabegação-->
             <ul class="menu-links" id="menuLinks">
                 <li><a href="#cardapio">Cardápio</a></li>
-                <li><a hre="#sobre">Sobre</a></li>
+                <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#depoimentos">Depoimentos</a></li>
                 <li><a href="#reserva">Reserva</a></li>
                 <li><a href="#contato">Contato</a></li>
@@ -187,7 +189,7 @@
         <section class="reserva" id="reserva">
             <h2>Reserve sua mesa</h2>
             <p>Prefere comer no salão? Deixe seus dados que confirmamos por telefone.</p>
-            
+
             <!--Inicio do formulario-->
             <form class="reserva-formulario" id="reservaFormulario">
                 <!--NOME-->
@@ -201,7 +203,7 @@
                     <label for="telefone"></label>
                     <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
                 </div>
-                
+
 
                 <div class="linha-formulario0">
                     <label for="data">Data</label>
@@ -209,7 +211,7 @@
                 </div>
 
                 <div class="linha-for, fulario">
-                    sç<a href=""></a>    
+                    sç<a href=""></a>
                 </div>
 
                 <div class="linha-formulario">
@@ -221,26 +223,60 @@
                         <option value="4">4 pessoa</option>
                         <option value="5">5 ou mais pessoas</option>
                     </select>
-<img id="fotoPrevia" src="foto-previa" alt="Prévia da imagem selecionada." hidden>                </div>
+                    <img id="fotoPrevia" src="foto-previa" alt="Prévia da imagem selecionada." hidden>
+                </div>
 
                 <div class="linha-formulario linha-formulario-completa">
                     <label for="mensagem">Observações (Opcional)</label>
-                    <textarea name="mensagem" id="mensagemv" rows="3" placeholder="Alguma prefência ou restrição alimentar:"></textarea>
+                    <textarea name="mensagem" id="mensagemv" rows="3"
+                        placeholder="Alguma prefência ou restrição alimentar:"></textarea>
                 </div>
 
                 <div class="linha-formulario linha-formatar linha-formulario-completa">
                     <label for="foto">Foto de referencia (opicional)</label>
                     <input type="file" id="foto" name="foto" accept="image/*">
-                    
+
                     <img id="fotoPrevia" src="foto-previa" alt="Prévia da imagem selecionada." hidden>
-                    
+
                     <button class="botao- botao-primario form-enviar" type="submit">Confirmat Reserva</button>
                 </div>
-                
+
             </form>
+
         </section>
 
+
+        <section class="chamada-final" id="pedir">
+            <h2>Bateu a fome</h2>
+            <p>
+                Peça pelo delivery ou venha comer no salão - abrimos todos os dias , das 18 à meia-noite
+            </p>
+            <a href="#" class="botao botao-destaque">Peça pelo WhatsApp</a>
+        </section>
     </main>
+
+    <footer class="rodape-site" id="contato">
+        <div class="rodape-info">
+            <p>&copy; Chama Burger - Rua das Brasas, 123, São Caetano
+            <p>
+            <p class="rodape-horario">Todos os dias, das 18h à meia-noite</p>
+        </div>
+
+        <ul class="rodape-links">
+            <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a></li>
+            <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i><span>Facebook</span></a></li>
+            <li><a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a></li>
+            <li><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i><span>TikTok</span></a></li>
+            <li><a href="#" aria-label="Ver no mapa"><i class="fa-solid fa-location-dot"></i><span>Ver no mapa</span></a></li>
+        </ul>
+    </footer>
+
+    <div class="carinho-resumo" id="carinhoResumo">
+        <span class="carinho-icone">
+            🛒
+        </span>
+        <span id="carrinho-contador">0</span> itens . <span id="carrinhoTotal">R$ 0,00</span>
+    </div>
 
 </body>
 
