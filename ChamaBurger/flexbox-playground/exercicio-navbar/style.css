@@ -1,0 +1,99 @@
+/* =====================================================
+   EXERCÍCIO: Navbar do Chama Burger
+
+   Objetivo (só com flexbox):
+   1) Logo à ESQUERDA, menu no MEIO e botão à DIREITA
+   2) Tudo alinhado verticalmente no centro da barra
+   3) Links do menu lado a lado, com espaço entre eles
+   4) Bônus: centralizar o .card no meio da .hero
+      (horizontal E vertical)
+
+   Escreva suas regras nos blocos marcados com ✏️
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff8f0;
+}
+
+main{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.navbar {
+    background: #E63946;
+    color: #fff;
+    padding: 0 32px;
+    height: 72px;
+    /* ✏️ escreva aqui o flexbox da navbar */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ✏️ escreva aqui o flexbox do .menu (links lado a lado) */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+}
+
+
+.btn-pedido {
+    background: #F4A300;
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.hero {
+    min-height: 15%;
+    ma
+    background: #ffe8d1;
+    /* ✏️ bônus: centralize o card aqui */
+    display: flex;
+}
+
+.card {
+    background: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    margin-bottom: 8px;
+}
+
+.card p {
+    margin-bottom: 12px;
+    color: #555;
+}
